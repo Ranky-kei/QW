@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+}
+
+::-webkit-scrollbar-track{
+	background: #2e3338;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #202225;
+	border: 1px solid #2e3338;
+	border-radius: 50px;
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header_section{
+    display: flex;
+    align-items: center;
+}
+
+.header_item{
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.headerLogo img{
+    padding: 10px 5px;
+    height: 60px;
+    transition: 0.1s linear;
+}
+
+.QW{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: 50px;
+}
+.QWtitle{
+    width: 12ch;
+    color: white;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid white;
+    animation: flashing-border 0.75s step-end infinite, printed-text 1.5s steps(12);
+}
+@keyframes flashing-border{
+    0%{
+        border-color: white;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: white;
+    }
+}
+@keyframes printed-text{
+    from{
+        width: 0;
+    }
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    animation: Dropdown-links 2s ease;
+}
+.links a{
+    margin: 5px 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: Dropdown-links 2s ease;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.buy a{
+    /* margin: 5px; */
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: Dropdown-links 2.5s ease;
+}
+
+@keyframes Dropdown-links{
+    from{
+        margin-top: -2%;
+        color: transparent;
+        background-color: transparent;
+    }
+}
